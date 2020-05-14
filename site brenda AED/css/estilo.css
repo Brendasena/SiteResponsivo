@@ -1,0 +1,153 @@
+/*Formatação geral*/
+body{
+	font-family: Raleway, "Josefin+Sans";
+}
+
+h1, h2, h3{
+	margin: 0;
+	font-family: "Fjalla+One", "Roboto Condensed";
+	font-weight: 700;
+}
+
+p{
+	 font-family: "Josefin+Sans", Raleway;
+}
+
+.container{
+	width: 100%
+}
+
+/*Cabeçalho - barra de notificação*/
+.logo img{
+	border-radius: 20%;
+}
+
+nav{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #87CEEB;
+	padding: 25px;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+nav ul li{
+	text-align: center;
+	width: 100%;
+	font-size: 1.5em;
+	padding: 2%;
+}
+
+nav ul li a{
+	display: inline-block;
+	padding: 10px 0;
+	width: 100%;
+	text-decoration: none;
+	color: #F5FFFA;
+}
+
+/*Header*/
+header{
+	background-image: url('../img/fundo.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #000000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 30px;
+}
+
+header p{
+	margin-bottom: 2em;
+	font-size: 1.7em;
+}
+
+.botao{
+	color: #F5FFFA;
+	text-decoration: none;
+	padding: 10px 30px;
+	background-color: #87CEEB;
+	font-size: .9em;
+	border-radius: 0%;
+}
+
+/*Sobre*/
+#Sobre{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #87CEEB;
+	color: #F5FFFA;
+}
+
+#Sobre h2{
+	margin-top: 20px;
+	font-size: 1.6em;
+}
+
+.foto img{
+	width: 60%;
+}
+
+.foto{
+	float: left;
+	width: 35%
+}
+
+.texto{
+	float: right;
+	width: 50%;
+}
+
+@media screen and (min-width: 768px){
+
+/*Cabeçalho - barra de notificação*/
+	nav{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	nav ul{
+		flex-direction: row;
+		width: 75%;
+	}
+
+/*Header*/
+header{
+	height: 240px;
+	justify-content: center;
+}
+
+/*Sobre*/
+#Sobre{
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 90vh
+	justify-content: center;
+	min-height: 80vh;
+}
+
+#Sobre h2{
+	text-align: center;
+	width: 100%;
+}
+
+#Sobre div{
+	flex-grow: 1;
+	flex-basis: 300px;
+	padding: 0 110px;
+}
+
+}
