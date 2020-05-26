@@ -148,6 +148,117 @@ header{
 	flex-grow: 1;
 	flex-basis: 300px;
 	padding: 0 110px;
+	align-items: center;
+}
+
+#Hobbyes{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	margin: 0 auto;
+}
+
+#Hobbyes div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px;
+}
+
+#Hobbyes p{
+	line-height: 1.5;
+	margin: 2vh;
+	font-size: 1.2;
+}
+
+#Hobbyes img{
+	margin: 10px 0;
+}
+
+#Hobbyes h2{
+	font-size: 2em;
+}
+
+/*Hobbyes*/
+#Hobbyes{
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+#Hobbyes h2{
+	text-align: center;
+	width: 100%;
+}
+
+#Hobbyes div{
+	flex-grow: 1;
+	flex-basis: 150px;
+	padding: 0 10px;
+}
+
+/*competencias*/
+#competencias{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#competencias h2{
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size: 2em;
+	text-align: center;
+}
+
+#competencias h3,p {
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size: 1em;
+	text-align: center;
+}
+
+#competencias a{
+	text-decoration: none;
+}
+
+#competencias img{
+	width: 80%;
+	margin-bottom: 0;
+	align-items: center;
+}
+
+#competencias .comp p{
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	margin-top: 0;
+	font-family: Raleway, "Josefin+Sans"
+	padding-left: 1.5;
+	line-height: 1.5;
+}
+
+#competencias {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#competencias h2,h3 {
+	width: 100%;
+	text-align: center;
+}
+
+#competencias .comp {
+	width: 33%;
+	align-items: center; 
 }
 
 }
