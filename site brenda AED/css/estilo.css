@@ -110,47 +110,6 @@ header p{
 	width: 50%;
 }
 
-@media screen and (min-width: 768px){
-
-/*Cabeçalho - barra de notificação*/
-	nav{
-		flex-direction: row;
-		justify-content: space-around;
-	}
-
-	nav ul{
-		flex-direction: row;
-		width: 75%;
-	}
-
-/*Header*/
-header{
-	height: 240px;
-	justify-content: center;
-}
-
-/*Sobre*/
-#Sobre{
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;
-	height: 90vh
-	justify-content: center;
-	min-height: 80vh;
-}
-
-#Sobre h2{
-	text-align: center;
-	width: 100%;
-}
-
-#Sobre div{
-	flex-grow: 1;
-	flex-basis: 300px;
-	padding: 0 110px;
-	align-items: center;
-}
-
 #Hobbyes{
 	padding: 20px;
 	display: flex;
@@ -182,27 +141,6 @@ header{
 	font-size: 2em;
 }
 
-/*Hobbyes*/
-#Hobbyes{
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	max-width: 1000px;
-	margin: 0 auto;
-}
-
-#Hobbyes h2{
-	text-align: center;
-	width: 100%;
-}
-
-#Hobbyes div{
-	flex-grow: 1;
-	flex-basis: 150px;
-	padding: 0 10px;
-}
-
-/*competencias*/
 #competencias{
 	display: flex;
 	flex-direction: column;
@@ -246,6 +184,125 @@ header{
 	line-height: 1.5;
 }
 
+/*contato*/
+#contato{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #F5FFFA;
+	width:100%;
+}
+
+#contato h2{
+	margin-left: 20px;
+	margin-width: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 2em;
+	text-align: center;
+	color: 	#000000;  
+}
+
+#contato > p{
+	margin-bottom: 20px;
+	font-size: 1.2em;
+	color: 	#000000;
+	text-align: center;
+}
+
+#contato a{
+	text-decoration: none;
+	color: #ffffff;
+	font-family: "Josefin+Sans", Raleway;
+	text-align: center;
+}
+
+#desen{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #F5FFFA;
+	width:100%;
+}
+
+#desen > p{
+	margin-bottom: 20px;
+	font-size: 1.2em;
+	color: 	#000000;
+	text-align: center;
+}
+
+footer{
+	text-align: center;
+	width: 100%;
+	background-color: #f1f1f1;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px){
+
+/*Cabeçalho - barra de notificação*/
+	nav{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	nav ul{
+		flex-direction: row;
+		width: 75%;
+	}
+
+/*Header*/
+header{
+	height: 240px;
+	justify-content: center;
+}
+
+/*Sobre*/
+#Sobre{
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 90vh
+	justify-content: center;
+	min-height: 80vh;
+}
+
+#Sobre h2{
+	text-align: center;
+	width: 100%;
+}
+
+#Sobre div{
+	flex-grow: 1;
+	flex-basis: 300px;
+	padding: 0 110px;
+	align-items: center;
+}
+
+/*Hobbyes*/
+#Hobbyes{
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+#Hobbyes h2{
+	text-align: center;
+	width: 100%;
+}
+
+#Hobbyes div{
+	flex-grow: 1;
+	flex-basis: 150px;
+	padding: 0 10px;
+}
+
+/*competencias*/
+
 #competencias {
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -259,6 +316,25 @@ header{
 #competencias .comp {
 	width: 33%;
 	align-items: center; 
+}
+
+/*contato*/
+
+#contato {
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	max-width: 100%;
+	margin: 0 auto;
+	text-align:center;
+	max-height: 40vh;
+	width: 100%
+}
+
+#contato h2,
+#contato p{
+	width: 100%;
+	text-align: center;
 }
 
 }
